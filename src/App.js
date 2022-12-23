@@ -1,5 +1,5 @@
 import { style } from "@mui/system";
-import React, { useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import { CreateNewFolder, Search } from "@mui/icons-material";
 const App = () => {

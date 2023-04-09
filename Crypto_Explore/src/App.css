@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+}
+/* p,span, a{
+    font-family: 'Open Sans', sans-serif;
+} */
+
+.font-size{
+    font-size: calc(1.375rem + 1.5vw);
+}
+.hero{
+    font-size: calc(1.475rem + 2.7vw);
+    line-height: 1.2;
+}
+.animated.infinite {
+    animation-iteration-count: infinite;
+}
+.pulse {
+    animation-name: pulse;
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.fadeIn {
+    animation-name: fadeIn;
+}
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse{
+0% {
+        transform: scaleX(1);
+}
+50% {
+    transform: scale3d(1.05,1.05,1.05);
+}
+100% {
+    transform: scaleX(1);
+}
+}

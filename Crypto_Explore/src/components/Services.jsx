@@ -24,7 +24,7 @@ const Services = () => {
               </button>
               </div>
             </div>
-            <div className='mt-4 w-full flex flex-col -start bg-white p-12 mx-8'>
+            <div className='mt-4 w-full flex flex-col -start bg-white p-12 lg:mx-8'>
                 <div>
               <img src="/assets/icon-3.png" alt="icon-3" className='h-auto mr-8' />
                 </div>
@@ -62,7 +62,7 @@ const Services = () => {
               </button>
               </div>
             </div>
-            <div className='mt-4 w-full flex flex-col -start bg-white p-12 mx-8'>
+            <div className='mt-4 w-full flex flex-col -start bg-white p-12 lg:mx-8'>
                 <div>
               <img src="/assets/icon-2.png" alt="icon-2" className='h-auto mr-8' />
                 </div>

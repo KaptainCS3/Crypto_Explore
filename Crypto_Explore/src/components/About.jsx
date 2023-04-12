@@ -11,7 +11,7 @@ const About = () => {
              <div className='animated fadeIn flex items-center justify-center lg:w-[45%]'>
                 <img src={("/assets/about.png")} alt="first hero image" className='max-w-full h-auto pulse animated infinite' style={{animationDuration: '3000s'}}/>
             </div>
-            <div className='my-12 w-1/2'>
+            <div className='my-12 lg:w-1/2'>
             <h2 className="font-[700] text-[2.5rem]">
                 About Us
             </h2>

@@ -6,6 +6,8 @@ import About from "./components/About";
 import Transaction from  './components/Transaction'
 import Industry from "./components/Industry";
 import Services from "./components/Services";
+import Token from "./components/Token";
+import FAQ from "./components/FAQ";
 import "./App.css";
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
         <Transaction />
         <Industry />
         <Services />
+        <Token />
+        <FAQ />
       </main>
       <Footer />
     </div>

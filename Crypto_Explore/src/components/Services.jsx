@@ -9,79 +9,85 @@ const Services = () => {
         <div className="w-[85%] mx-auto">
           <div className='flex flex-col items-center justify-center'>
             <h1 className='font-size mb-2 font-bold'>Services</h1>
-            <p className='text-[#16D5FF] text-xl mb-6'>Buy, Sell And Exchange Cryptocurrency</p>
-            <div className='mt-2 w-full flex flex-col -start bg-white p-12'>
+            <p className='text-[rgb(22,213,255)] text-xl mb-6'>Buy, Sell And Exchange Cryptocurrency</p>
+            <div className='w-full'>
+            <div className='lg:flex justify-between mb-4'>
+            <div className='mt-4 w-full flex flex-col -start bg-white p-12 '>
                 <div>
               <img src="/assets/icon-7.png" alt="icon-9" className='h-auto mr-8' />
                 </div>
               <div>
-              <h3 className='text-xl pt-8 pb-4 font-[500]'>Easy To Start</h3>
+              <h3 className='text-xl pt-8 pb-4 font-[500]'>Currency Wallet</h3>
               <p className='text-[#999] pb-4 text-[1.125rem]'>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
               <button className='text-[#16D5FF]'>Read More
-                <FontAwesomeIcon icon={faArrowRight} className='pl-4'/>
+                <FontAwesomeIcon icon={faArrowRight} className='pl-3'/>
+              </button>
+              </div>
+            </div>
+            <div className='mt-4 w-full flex flex-col -start bg-white p-12 mx-8'>
+                <div>
+              <img src="/assets/icon-3.png" alt="icon-3" className='h-auto mr-8' />
+                </div>
+              <div>
+              <h3 className='text-xl pt-8 pb-4 font-[500]'>Currency Transaction</h3>
+              <p className='text-[#999] pb-4 text-[1.125rem]'>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
+              <button className="text-[#16D5FF]">Read More
+                <FontAwesomeIcon icon={faArrowRight} className='pl-3'/>
               </button>
               </div>
             </div>
             <div className='mt-4 w-full flex flex-col -start bg-white p-12'>
                 <div>
-              <img src="/assets/icon-6.png" alt="icon-10" className='h-auto mr-8' />
+              <img src="/assets/icon-9.png" alt="icon-9" className='h-auto mr-8' />
                 </div>
               <div>
-              <h3 className='text-xl pt-8 pb-4 font-[500]'>Safe & Secure</h3>
+              <h3 className='text-xl pt-8 pb-4 font-[500]'>Bitcoin Investment</h3>
               <p className='text-[#999] pb-4 text-[1.125rem]'>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
               <button className="text-[#16D5FF]">Read More
-                <FontAwesomeIcon icon={faArrowRight} className='pl-4'/>
+                <FontAwesomeIcon icon={faArrowRight} className='pl-3'/>
+              </button>
+              </div>
+            </div>
+            </div>
+            <div className='lg:flex justify-between'>
+            <div className='mt-4 w-full flex flex-col -start bg-white p-12'>
+                <div>
+              <img src="/assets/icon-5.png" alt="icon-5" className='h-auto mr-8' />
+                </div>
+              <div>
+              <h3 className='text-xl pt-8 pb-4 font-[500]'>Currency Exchange</h3>
+              <p className='text-[#999] pb-4 text-[1.125rem]'>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
+              <button className="text-[#16D5FF]">Read More
+                <FontAwesomeIcon icon={faArrowRight} className='pl-3'/>
+              </button>
+              </div>
+            </div>
+            <div className='mt-4 w-full flex flex-col -start bg-white p-12 mx-8'>
+                <div>
+              <img src="/assets/icon-2.png" alt="icon-2" className='h-auto mr-8' />
+                </div>
+              <div>
+              <h3 className='text-xl pt-8 pb-4 font-[500]'>Bitcoin Escrow</h3>
+              <p className='text-[#999] pb-4 text-[1.125rem]'>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
+              <button className="text-[#16D5FF]">Read More
+                <FontAwesomeIcon icon={faArrowRight} className='pl-3'/>
               </button>
               </div>
             </div>
             <div className='mt-4 w-full flex flex-col -start bg-white p-12'>
                 <div>
-              <img src="/assets/icon-5.png" alt="icon-2" className='h-auto mr-8' />
+              <img src="/assets/icon-8.png" alt="icon-8" className='h-auto mr-8' />
                 </div>
               <div>
-              <h3 className='text-xl pt-8 pb-4 font-[500]'>Affordable Plans</h3>
+              <h3 className='text-xl pt-8 pb-4 font-[500]'>Token Sale</h3>
               <p className='text-[#999] pb-4 text-[1.125rem]'>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
               <button className="text-[#16D5FF]">Read More
-                <FontAwesomeIcon icon={faArrowRight} className='pl-4'/>
+                <FontAwesomeIcon icon={faArrowRight} className='pl-3'/>
               </button>
               </div>
             </div>
-            <div className='mt-4 w-full flex flex-col -start bg-white p-12'>
-                <div>
-              <img src="/assets/icon-4.png" alt="icon-2" className='h-auto mr-8' />
-                </div>
-              <div>
-              <h3 className='text-xl pt-8 pb-4 font-[500]'>Secure Storage</h3>
-              <p className='text-[#999] pb-4 text-[1.125rem]'>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-              <button className="text-[#16D5FF]">Read More
-                <FontAwesomeIcon icon={faArrowRight} className='pl-4'/>
-              </button>
-              </div>
             </div>
-            <div className='mt-4 w-full flex flex-col -start bg-white p-12'>
-                <div>
-              <img src="/assets/icon-3.png" alt="icon-2" className='h-auto mr-8' />
-                </div>
-              <div>
-              <h3 className='text-xl pt-8 pb-4 font-[500]'>Protected By Insurance</h3>
-              <p className='text-[#999] pb-4 text-[1.125rem]'>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-              <button className="text-[#16D5FF]">Read More
-                <FontAwesomeIcon icon={faArrowRight} className='pl-4'/>
-              </button>
-              </div>
-            </div>
-            <div className='mt-4 w-full flex flex-col -start bg-white p-12'>
-                <div>
-              <img src="/assets/icon-8.png" alt="icon-2" className='h-auto mr-8' />
-                </div>
-              <div>
-              <h3 className='text-xl pt-8 pb-4 font-[500]'>24/7 Support</h3>
-              <p className='text-[#999] pb-4 text-[1.125rem]'>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-              <button className="text-[#16D5FF]">Read More
-                <FontAwesomeIcon icon={faArrowRight} className='pl-4'/>
-              </button>
-              </div>
-            </div>
+          </div>
           </div>
         </div>
       </section>

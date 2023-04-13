@@ -36,16 +36,16 @@ const Token = () => {
           <button className='my-8 px-8 py-4 bg-[#16D5FF] rounded-md text-white text-xl'>Buy Token</button>
           <div className='flex mx-4 mb-12 sm:w-1/2 md:w-3/4'>
             <div className='w-full h-auto'>
-              <img src="../../public/assets/payment-1.png" alt="payment-1" className='sm:w-full' />
+              <img src="/assets/payment-1.png" alt="payment-1" className='sm:w-full' />
             </div>
             <div className='w-full mx-2 h-auto'>
-              <img src="../../public/assets/payment-2.png" alt="payment-2" className='sm:w-full' />
+              <img src="/assets/payment-2.png" alt="payment-2" className='sm:w-full' />
             </div>
             <div className='w-full mr-2 h-auto'>
-              <img src="../../public/assets/payment-3.png" alt="payment-3" className='sm:w-full' />
+              <img src="/assets/payment-3.png" alt="payment-3" className='sm:w-full' />
             </div>
             <div className='w-full h-auto'>
-              <img src="../../public/assets/payment-4.png" alt="payment-4" className='sm:w-full' />
+              <img src="/assets/payment-4.png" alt="payment-4" className='sm:w-full' />
             </div>
           </div>
           </div>

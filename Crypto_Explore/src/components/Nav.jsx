@@ -39,14 +39,14 @@ const Nav = () => {
           <div className="mt-4 border-b-[1px] bg-red-500 w-full lg:hidden"></div>
         )}
         {isShow && (
-          <div className="flex sm:h-64 w-full flex-col justify-between items-start mt-4 md:h-64 lg:flex-row h-full">
+          <div className="flex items-start sm:h-64 w-full flex-col justify-between mt-4 md:h-64 lg:flex-row h-full">
             <a className="hover:text-[#16D5FF] cursor-pointer">Home</a>
             <a className="hover:text-[#16D5FF] cursor-pointer">About</a>
             <a className="hover:text-[#16D5FF] cursor-pointer">Service</a>
             <a className="hover:text-[#16D5FF] cursor-pointer">Roadmap</a>
             <a className="hover:text-[#16D5FF] cursor-pointer">Pages</a>
             <a className="hover:text-[#16D5FF] cursor-pointer">Contact</a>
-            <div className="flex justify-between w-1/5 sm:hidden md:hidden">
+            <div className="flex justify-between w-1/5 -mt-2 sm:hidden md:hidden">
               <div className="w-9 h-9 bg-[#F2F8FE] rounded-full flex justify-center items-center text-[#16D5FF] cursor-pointer hover:bg-[#16D5FF] hover:text-white">
                 <FontAwesomeIcon icon={faFacebookF} />
               </div>

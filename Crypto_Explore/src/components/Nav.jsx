@@ -6,6 +6,7 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 //! calc(1.375rem + 1.5vw)
 const Nav = () => {
   const [isShow, setIsShow] = useState(true);
@@ -40,12 +41,12 @@ const Nav = () => {
         )}
         {isShow && (
           <div className="flex items-start sm:h-64 w-full flex-col justify-between mt-4 md:h-64 lg:flex-row h-full">
-            <a className="hover:text-[#16D5FF] cursor-pointer">Home</a>
-            <a className="hover:text-[#16D5FF] cursor-pointer">About</a>
-            <a className="hover:text-[#16D5FF] cursor-pointer">Service</a>
-            <a className="hover:text-[#16D5FF] cursor-pointer">Roadmap</a>
-            <a className="hover:text-[#16D5FF] cursor-pointer">Pages</a>
-            <a className="hover:text-[#16D5FF] cursor-pointer">Contact</a>
+            <Link to="/" className="hover:text-[#16D5FF] cursor-pointer">Home</Link>
+            <Link to="/aboutus" className="hover:text-[#16D5FF] cursor-pointer">About</Link>
+            <Link to="service" className="hover:text-[#16D5FF] cursor-pointer">Service</Link>
+            <Link to="roadmap" className="hover:text-[#16D5FF] cursor-pointer">Roadmap</Link>
+            <Link to="" className="hover:text-[#16D5FF] cursor-pointer">Pages</Link>
+            <Link to="" className="hover:text-[#16D5FF] cursor-pointer">Contact</Link>
             <div className="flex justify-between w-1/5 -mt-2 sm:hidden md:hidden">
               <div className="w-9 h-9 bg-[#F2F8FE] rounded-full flex justify-center items-center text-[#16D5FF] cursor-pointer hover:bg-[#16D5FF] hover:text-white">
                 <FontAwesomeIcon icon={faFacebookF} />

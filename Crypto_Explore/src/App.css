@@ -16,17 +16,19 @@ h1,h2,h3,h4,h5,h6{
     font-size: calc(1.475rem + 2.7vw);
     line-height: 1.2;
 }
-.animated.infinite {
+/* .animated.infinite {
     animation-iteration-count: infinite;
-}
-.pulse {
+} */
+/* .pulse {
     animation-name: pulse;
+} */
+.animation-pulse{
+    animation: pulse 3s infinite;
 }
-
-.animated {
+/* .animated {
     animation-duration: 1s;
     animation-fill-mode: both;
-}
+} */
 .fadeIn {
     animation-name: fadeIn;
 }

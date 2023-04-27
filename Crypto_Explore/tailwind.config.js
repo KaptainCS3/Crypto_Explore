@@ -9,8 +9,8 @@ module.exports = {
       // },
     },
     screens: {
-      sm: { min: "200px", max: "768px" },
-      // => @media (min-width: 200px and max-width: 768px) { ... }
+      sm: { min: "1px", max: "768px" },
+      // => @media (min-width: 1px and max-width: 768px) { ... }
 
       md: { min: "769px", max: "990px" },
       // => @media (min-width: 769px and max-width: 990px) { ... }

@@ -15,17 +15,13 @@ import {
 const Footer = () => {
   return (
     <div>
-      <footer className="h-full sm:w-full w-max[540px] mx-auto flex flex-col justify-between px-4 pt-[6em] font-['Open Sans'] md:w-full mx-auto">
+      <footer className="bg-[#F2F8FE] h-full sm:w-full w-max[540px] mx-auto flex flex-col justify-between px-4 pt-[6em] font-['Open Sans'] md:w-full mx-auto">
         {/* Section 1 */}
         <div className="w-[85%] mx-auto">
           <div className="w-full md:flex justify-around items-center lg:flex">
             <div className="mb-[4em] md:w-1/2 lg:w-1/2">
               <div className="flex w-11 h-11 my-7">
-                <img
-                  src={(`/assets/icon-1.png`)}
-                  alt="logo"
-                  className="w-full"
-                />
+                <img src={`/assets/icon-1.png`} alt="logo" className="w-full" />
                 <h2 className="pl-2 text-3xl font-bold text-[#16D5FF]">
                   CryptoCoin
                 </h2>

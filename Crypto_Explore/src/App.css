@@ -22,8 +22,11 @@ h1,h2,h3,h4,h5,h6{
 /* .pulse {
     animation-name: pulse;
 } */
-.animation-pulse{
+/* .animation-pulse{
     animation: pulse 3s infinite;
+} */
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(.4,0,.6,1) infinite;
 }
 /* .animated {
     animation-duration: 1s;

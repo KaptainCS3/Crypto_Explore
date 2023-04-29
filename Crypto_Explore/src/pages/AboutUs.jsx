@@ -3,15 +3,17 @@ import About from '../components/About'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import CurrentTab from '../components/CurrentTab'
+import ScrollTop from '../components/ScrollTop'
 const AboutUs = () => {
   return (
     <div>
-        <Nav />
-        <CurrentTab />
-        <About />
-        <Footer />
+      <Nav />
+      <CurrentTab path="About us" />
+      <About />
+      <ScrollTop />
+      <Footer />
     </div>
-  )
+  );
 }
 
 export default AboutUs

@@ -1,5 +1,5 @@
 # Crypto Explore
-###This is template i search to improve my frontend skills with alot of cool features
+### This is template i search to improve my frontend skills with alot of cool features
 - google map 
 - scroll to top
 - animations

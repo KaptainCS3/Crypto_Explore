@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React from "react";
+import roadmap from "../../roadmap";
 const ListMaps = () => {
   return (
     <>
@@ -10,40 +10,59 @@ const ListMaps = () => {
             <p className="text-[#16D5FF] text-xl mb-6">
               We Translate Your Dream Into Reality
             </p>
-            <div className="relative w-full border-dashed border-t-2 border-[#999] lg:flex">
-              <div>
-                <div className="absolute top-0 left-[11.3%] flex w-0 h-32 border-r-2 border-[#999] border-dashed -rotate-180">
-                </div>
-                <div className="bg-white absolute left-[10%] -top-[1.05rem] flex items-center justify-center w-8 h-8 border-2 border-[#16D5FF] rotate-45">
-                  <div className="w-5 h-5 bg-[#16D5FF]"></div>
-                </div>
-              </div>
-              <div>
-                <div className="absolute top-0 left-[31.3%] flex w-0 h-32 border-r-2 border-[#999] border-dashed -rotate-180">
-                </div>
-                <div className="bg-white absolute left-[30%] -top-[1.05rem] flex items-center justify-center w-8 h-8 border-2 border-[#16D5FF] rotate-45">
-                  <div className="w-5 h-5 bg-[#16D5FF]"></div>
-                </div>
-              </div>
-              <div>
-                <div className="absolute top-0 left-[51.3%] flex w-0 h-32 border-r-2 border-[#999] border-dashed -rotate-180">
-                </div>
-                <div className="bg-white absolute left-1/2 -top-[1.05rem] flex items-center justify-center w-8 h-8 border-2 border-[#16D5FF] rotate-45">
-                  <div className="w-5 h-5 bg-[#16D5FF]"></div>
-                </div>
-              </div>
-              <div>
-                <div className="absolute top-0 left-[71.4%] flex w-0 h-32 border-r-2 border-[#999] border-dashed -rotate-180"></div>
-                <div className="bg-white absolute left-[70%] -top-[1.05rem] flex items-center justify-center w-8 h-8 border-2 border-[#16D5FF] rotate-45">
-                  <div className="w-5 h-5 bg-[#16D5FF]"></div>
+            {/* <div className="owl-carousel roadmap-carousel">
+              <div className="owl-stage-outer">
+                <div className="owl-stage">
+                  <div className="owl-item">
+                    <div className="roadmap-item">
+                      <div className="roadmap-point">
+                      </div>
+                      <h5>July 2045</h5>
+                      <span>Diam dolor ipsum sit amet erat ipsum lorem sit</span>
+                    </div>
+                  </div>
+                  <div className=".owl-carousel"></div>
+                  <div className=".owl-carousel"></div>
+                  <div className=".owl-carousel"></div>
+                  <div className=".owl-carousel"></div>
+                  <div className=".owl-carousel"></div>
+                  <div className=".owl-carousel"></div>
+                  <div className=".owl-carousel"></div>
+                  <div className=".owl-carousel"></div>
+                  <div className=".owl-carousel"></div>
+                  <div className=".owl-carousel"></div>
+                  <div className=".owl-carousel"></div>
                 </div>
               </div>
-              <div>
-                <div className="absolute top-0 left-[91.3%] flex w-0 h-32 border-r-2 border-[#999] border-dashed -rotate-180"></div>
-                <div className="bg-white absolute left-[90%] -top-[1.05rem] flex items-center justify-center w-8 h-8 border-2 border-[#16D5FF] rotate-45">
-                  <div className="w-5 h-5 bg-[#16D5FF]"></div>
+            </div> */}
+
+            <div className="owl-carousel roadmap-carousel wow owl-loaded owl-drag">
+              <div className="owl-stage-outer">
+                <div className="owl-stage">
+                  <div className="owl-item cloned mr-6 flex">
+                    {roadmap.map((el) => (
+                      <div className="roadmap-item">
+                        <div className="roadmap-point">
+                          <span className="square"></span>
+                        </div>
+                        <h5>{el.date}</h5>
+                        <span>
+                          {el.comment}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
+              {/* <div className="owl-nav">
+                <div className="owl-prev">
+                  <i className="bi bi-chevron-left"></i>
+                </div>
+                <div className="owl-next">
+                  <i className="bi bi-chevron-right"></i>
+                </div>
+              </div>
+              <div className="owl-dots disabled"></div> */}
             </div>
           </div>
         </div>
@@ -52,4 +71,4 @@ const ListMaps = () => {
   );
 };
 
-export default ListMaps
+export default ListMaps;

@@ -1,19 +1,20 @@
 import React from 'react'
-import About from '../components/About'
 import Nav from '../components/Nav'
-import Footer from '../components/Footer'
 import CurrentTab from '../components/CurrentTab'
+import Token from '../components/Token'
+import Footer from '../components/Footer'
 import ScrollTop from '../components/ScrollTop'
-const AboutUs = () => {
+
+const TokenSale = () => {
   return (
-    <div>
+    <>
       <Nav />
-      <CurrentTab path="About us" />
-      <About />
+      <CurrentTab path="Token Sales" />
+      <Token background="bg-[#F2F8FE]"/>
       <ScrollTop />
       <Footer />
-    </div>
+    </>
   );
 }
 
-export default AboutUs
+export default TokenSale

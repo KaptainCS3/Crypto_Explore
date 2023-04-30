@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronRight,
@@ -12,20 +12,35 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+
 const Footer = () => {
+  const [subscribe, setSubscribe] = useState({
+    email: "",
+  });
+
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   setSubscribe({
+  //     email: "",
+  //   });
+  // };
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setSubscribe((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
+
   return (
     <div>
-      <footer className="h-full sm:w-full w-max[540px] mx-auto flex flex-col justify-between px-4 pt-[6em] font-['Open Sans'] md:w-full mx-auto">
+      <footer className="bg-[#F2F8FE] h-full sm:w-full w-max[540px] mx-auto flex flex-col justify-between px-4 pt-[6em] font-['Open Sans'] md:w-full mx-auto">
         {/* Section 1 */}
         <div className="w-[85%] mx-auto">
           <div className="w-full md:flex justify-around items-center lg:flex">
             <div className="mb-[4em] md:w-1/2 lg:w-1/2">
               <div className="flex w-11 h-11 my-7">
-                <img
-                  src={(`/assets/icon-1.png`)}
-                  alt="logo"
-                  className="w-full"
-                />
+                <img src={`/assets/icon-1.png`} alt="logo" className="w-full" />
                 <h2 className="pl-2 text-3xl font-bold text-[#16D5FF]">
                   CryptoCoin
                 </h2>
@@ -42,15 +57,19 @@ const Footer = () => {
               <p className="text-[#999999] pb-4">
                 Clita erat ipsum et lorem et sit, sed stet lorem sit clita.
               </p>
-              <div className="border pl-4 pr-2 py-1.5 flex justify-between rounded focus:border-[#16D5FF]">
+              <div className="flex justify-between rounded form__input focus:border-[#16D5FF]">
                 <input
                   type="email"
-                  placeholder="Your email"
-                  className="bg-transparent outline-none pl-2 w-[64%]"
+                  className="bg-transparent border w-full outline-none p-4 form text-[#999] placeholder:text-slate-400"
+                  required
+                  name="email"
+                  onChange={handleChange}
+                  value={subscribe.email}
                 />
+                <span>Your Email</span>
                 <button
                   type="button"
-                  className="text-white bg-[#0dcaf0] px-3 py-2 text-xl rounded focus:border-4 border-[#2dd9ff]"
+                  className="absolute top-0 right-0 my-2 mr-2 text-white bg-[#0dcaf0] px-3 py-2 text-xl rounded"
                 >
                   SignUp
                 </button>

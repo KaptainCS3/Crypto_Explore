@@ -33,7 +33,7 @@ const ContactForm = () => {
   };
   return (
     <>
-      <section className="bg-white mb-12 pt-16 pb-64 h-full sm:w-full w-max[540px] mx-auto flex flex-col justify-between font-['Open Sans'] md:w-full mx-auto">
+      <section className="bg-white mb-12 pt-16 pb-12 h-full sm:w-full w-max[540px] mx-auto flex flex-col justify-between font-['Open Sans'] md:w-full mx-auto">
         <div className="w-[85%] mx-auto sm:w-[86%] md:w-[86%]">
           <div className="flex justify-between items-center sm:flex-col sm:items-start sm:mb-6 md:flex-col md:items-start md:mb-6">
             <Fade bottom>

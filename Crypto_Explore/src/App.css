@@ -16,15 +16,20 @@ h1,h2,h3,h4,h5,h6{
     font-size: calc(1.475rem + 2.7vw);
     line-height: 1.2;
 }
-/* .animated.infinite {
-    animation-iteration-count: infinite;
-} */
-/* .pulse {
-    animation-name: pulse;
-} */
-/* .animation-pulse{
-    animation: pulse 3s infinite;
-} */
+.color{
+    background-color: #16D5FF;
+    color: #fff;
+    border: 2px solid #16D5FF;
+}
+
+.result{
+    display: none;
+    transition: all 0.15s ease-in-out;
+}
+.result.show{
+    display: block;
+    transition: all 0.15s ease-in-out;
+}
 .animate-pulse {
     animation: pulse 2s cubic-bezier(.4,0,.6,1) infinite;
 }
@@ -54,4 +59,207 @@ h1,h2,h3,h4,h5,h6{
 100% {
     transform: scaleX(1);
 }
+}
+
+ .form {
+        border-radius: 3px;
+        border: 1px solid #ced4da;
+        padding: 1rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        width: 100%
+    }
+
+    .form:focus {
+        border-color: #16D5FF;
+        box-shadow: 0 0 0 .25rem rgba(22,213,255,0.25);
+        color: #495057;
+        outline: 0
+    }
+
+.form__input{
+    position: relative;
+}
+
+.form__input span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  font-size: 1em;
+  pointer-events: none;
+  padding: 0.1rem;
+  margin-top: 1rem;
+  transition: 0.25s;
+}
+
+.form__input span {
+  padding-left: 1.125rem;
+  color: #999;
+}
+
+.form__input input:valid ~ span,
+.form__input textarea:valid ~ span,
+.form__input input:focus ~ span,
+.form__input textarea:focus ~ span {
+  font-size: 0.9em;
+  padding: 2px 20px;
+  transform: translateY(-1.1em);
+  color: #ccc;
+  /* padding-bottom: 1rem; */
+}
+
+/* .form__input input:focus{
+  border: 1px solid #5390D9;
+  background: #fff;
+} */
+
+.text{
+    font-size: calc(1.625rem + 4.5vw);
+    font-weight: 700;
+    line-height: 1.2;
+}
+.text-2{
+    font-size: calc(1.375rem + 1.5vw);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.dropdown__list{
+    display: none;
+}
+.dropdown:hover .dropdown__list{
+    display: block;
+}
+
+.no-js .owl-carousel, .owl-carousel.owl-loaded {
+    display: block;
+}
+
+.roadmap-carousel {
+    position: relative;
+}
+
+.owl-carousel {
+    display: none;
+    width: 100%;
+    z-index: 1;
+}
+.roadmap-carousel::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 100%;
+    top: 20px;
+    left: 0;
+    border-top: 2px dashed #999;
+}
+
+.owl-carousel, .owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+.owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    -moz-backface-visibility: hidden;
+}
+
+.owl-carousel.owl-drag .owl-item {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.owl-carousel .owl-item {
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-touch-callout: none;
+}
+
+.owl-carousel .owl-item, .owl-carousel .owl-wrapper {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+}
+
+
+
+.owl-carousel, .owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+
+.roadmap-item {
+    position: relative;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.roadmap-item::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 115px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-right: 2px dashed #999;
+}
+
+.roadmap-item::after {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    top: 111px;
+    left: 50%;
+    margin-left: -7px;
+    transform: rotate(45deg);
+    background: #16D5FF;
+}
+
+.roadmap-point {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 6px;
+    left: 50%;
+    margin-left: -15px;
+    background: #FFFFFF;
+    border: 2px solid #16D5FF;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roadmap-carousel .roadmap-item::after {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    top: 111px;
+    left: 50%;
+    margin-left: -7px;
+    transform: rotate(45deg);
+    background: #16D5FF;
+}
+
+.roadmap-carousel .roadmap-item .roadmap-point .square {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: #16D5FF;
 }

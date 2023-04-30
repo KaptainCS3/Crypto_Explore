@@ -22,8 +22,8 @@ const App = () => {
         <Industry />
         <Services
           background="bg-white"
-          color="border-r-[#F2F8FE]"
-          borderRight="border-r-white"
+          color="after:border-r-[#F2F8FE]"
+          borderRight="hover:after:border-r-white"
           mainBackground="bg-[#F2F8FE]"
         />
         <ListMaps />
